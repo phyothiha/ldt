@@ -10,7 +10,7 @@
     <title>Laravel Dashboard Template</title>
     @vite('resources/css/app.css')
 </head>
-<body class="flex h-full text-sm text-slate-700 antialiased">
+<body class="flex h-full text-sm antialiased text-slate-700">
 
     {{--
         --tw-header-height: 70px
@@ -21,7 +21,78 @@
     <div class="flex">
 
         <!-- Sidebar -->
-        <div class="bg-slate-100 w-[280px] shrink-0">
+        <div class="border-e-slate-200 border-e w-[280px] shrink-0">
+
+            <!-- Sidebar Header -->
+            <div class="px-6 h-[70px] flex items-center justify-between">
+
+                <!-- Logo Expand -->
+                <a href="#" class="flex">
+                    <img src="{{ asset('img/logomark.min.svg') }}" alt="Laravel" class="w-6">
+                    <img src="{{ asset('img/logotype.min.svg') }}" alt="Laravel" class="ml-3 w-14">
+                </a>
+                <!-- Logo Expand /-->
+
+                <!-- Sidebar Toggle -->
+                <button>
+                    Toggle
+                </button>
+                <!-- Sidebar Toggle /-->
+
+            </div>
+            <!-- Sidebar Header /-->
+
+            <!-- Sidebar Content -->
+            <div class="py-5 pe-2">
+
+                <div class="px-5">
+
+                    <!-- Sidebar Menu -->
+                    <div class="flex flex-col gap-0.5">
+
+                        {{-- Menu Item --}}
+                        <div class="flex flex-col cursor-pointer">
+                            <div class="flex items-center gap-4 px-2 py-2">
+                                {{-- icon --}}
+                                <span class="items-start shrink-0 text-slate-400">
+                                    &copy;
+                                </span>
+                                {{-- title --}}
+                                <span class="flex items-center text-sm font-medium text-slate-800 grow">
+                                    User Management
+                                </span>
+                                {{-- badge --}}
+                                <span class="py-py px-1 text-[0.625rem] rounded bg-slate-200">
+                                    Soon
+                                </span>
+                            </div>
+                        </div>
+
+                        {{-- Menu Item --}}
+                        <div class="flex flex-col cursor-pointer">
+                            <div class="flex items-center gap-4 px-2 py-2">
+                                {{-- icon --}}
+                                <span class="items-start shrink-0 text-slate-400">
+                                    &copy;
+                                </span>
+                                {{-- title --}}
+                                <span class="flex items-center text-sm font-medium text-slate-800 grow">
+                                    User Management
+                                </span>
+                                {{-- badge --}}
+                                <span class="py-py px-1 text-[0.625rem] rounded bg-slate-200">
+                                    Soon
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Sidebar Menu /-->
+
+                </div>
+
+            </div>
+            <!-- Sidebar Content /-->
 
         </div>
         <!-- Sidebar /-->
@@ -52,7 +123,7 @@
             <!-- Footer -->
             <footer>
                 <div class="container">
-                    <div class="flex justify-between items-center py-5">
+                    <div class="flex items-center justify-between py-5">
                         <div class="flex gap-2 text-sm font-normal">
                             <span class="text-slate-500">2025©</span>
                             <a class="text-slate-600" href="#">
@@ -60,7 +131,7 @@
                             </a>
                         </div>
 
-                        <nav class="flex gap-4 text-sm text-slate-600 font-normal">
+                        <nav class="flex gap-4 text-sm font-normal text-slate-600">
                             <a class="" href="#">
                                 Docs
                             </a>
